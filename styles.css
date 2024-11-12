@@ -1,0 +1,114 @@
+body {
+    background-image: url('https://png.pngtree.com/background/20210711/original/pngtree-beautiful-technology-website-business-poster-background-template-picture-image_1107136.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(247, 242, 242);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+fieldset {
+    border: 2px solid rgb(177, 224, 138);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: rgb(29, 29, 123);
+}
+
+label {
+    display: block;
+    margin: 8px 0 4px;
+    color: rgb(20, 20, 21);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid rgb(65, 198, 114);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: rgb(66, 127, 42);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: rgb(87, 142, 63);
+}
+
+#resumeDisplay {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    min-height: 100vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+#socialShareButtons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#shareableLink {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid rgb(65, 198, 114);
+    border-radius: 4px;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.share-button {
+    width: 48%;
+    margin: 4px 1%;
+    padding: 10px;
+    background: rgb(97, 158, 47);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.share-button:hover {
+    background: rgb(87, 142, 63);
+}

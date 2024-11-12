@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shareable Resume Builder</title>
+</head>
+<body>
+    <h1>Shareable Resume Builder</h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" rows="4" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" name="skills" rows="4" required></textarea>
+        </fieldset>
+        <button type="button" id="generateResume">Generate Resume Below</button>
+    </form>
+    
+    <div id="resumeDisplay">
+        <h2>Live Resume</h2>
+        <p><strong>Name:</strong> <span id="displayName" contenteditable="true"></span></p>
+        <p><strong>Email:</strong> <span id="displayEmail" contenteditable="true"></span></p>
+        <p><strong>Phone:</strong> <span id="displayPhone" contenteditable="true"></span></p>
+        <p><strong>Experience:</strong> <span id="displayExperience" contenteditable="true"></span></p>
+        <p><strong>Skills:</strong> <span id="displaySkills" contenteditable="true"></span></p>
+        <button id="downloadResume">Download Resume as PDF</button>
+        <div class="link-container">
+            <label for="shareableLink">Shareable Link:</label>
+            <input type="text" id="shareableLink" readonly>
+            <button type="button" id="copyLinkButton">Copy Link</button>
+        </div>
+    </div>
+
+    <div id="socialShareButtons">
+        <button id="whatsappShare" class="share-button">Share on WhatsApp</button>
+        <button id="emailShare" class="share-button">Share via Email</button>
+        <button id="facebookShare" class="share-button">Share on Facebook</button>
+        <button id="twitterShare" class="share-button">Share on Twitter</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
